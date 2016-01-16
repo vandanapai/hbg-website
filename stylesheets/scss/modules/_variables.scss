@@ -1,0 +1,20 @@
+// MODULES
+
+$body-max-width: 1200px;
+
+// FONTS
+
+$sans-font-stack: "Din", sans-serif;
+$serif-font-stack: "Baskerville", Georgia, serif;
+
+// FONT SIZES
+
+$baseline-multiplier: 1.5;
+$main-nav-font-size: 0.75em;
+
+$serif-letter-spacing: 2px;
+
+// MEDIA QUERIES
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);

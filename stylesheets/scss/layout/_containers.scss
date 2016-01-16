@@ -1,0 +1,148 @@
+// .page-container {
+// 	max-width: $body-max-width;
+// 	margin: 0 auto;
+// }
+
+.grid-container{
+	@include outer-container;
+
+	&.centered {
+		text-align: center;
+	}
+
+}
+
+.grid-container, .content-container, .sub-container, article, aside {
+
+	&.dark-blue {
+		background-color: $darkest-blue-container;
+	}
+
+	&.light-blue {
+		background-color: $blue-container;
+	}
+
+	&.blue {
+		background-color: $dark-blue;
+	}
+
+	&.gold {
+		background-color: $gold-container;
+	}
+
+	&.light {
+		background-color: $light-container;
+	}
+}
+
+
+.hero-container {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	left: 0;
+	@include box(vertical, center, center);
+}
+
+.content-container {
+	padding: 100px 0px 100px 0px;
+}
+
+
+.sub-container {
+	margin-top: 50px;
+	padding: 100px;
+
+	p {
+		max-width: 500px;
+	}
+
+	&.text-right-align {
+		text-align: right;
+	}
+}
+
+.bg-img-container {
+	position: relative;
+}
+
+.cta-container{
+	padding: 50px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 25%;
+}
+
+.quote-container {
+	text-align: center;
+	@include shift(2);
+	@include span-columns(8);
+}
+
+.table-container {
+	display: table;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.table-half {
+display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  padding: 1rem;
+  float: left;
+  height: 500px;
+  @include box(vertical, center, center);
+
+  @include media($mobile) {
+  	width: 100%;
+  }
+
+  &.left {
+  	background-color: $light-container;
+  }
+
+  &.right {
+  	background-color: $gold-container;
+
+  }
+}
+
+.table-left-text-wrap {
+	max-width: 400px;
+}
+
+.col-12 {
+	@include span-columns(12);
+}
+
+.col-10 {
+	@include span-columns(10);
+}
+
+.col-8 {
+	@include span-columns(8);
+
+	&.offset-right {
+		@include shift(4);
+	}
+}
+
+.col-6 {
+	@include span-columns(6);
+
+	&.offset-right {
+		@include shift(5);
+	}
+}
+
+.col-4 {
+	@include span-columns(4);
+
+	&.offset-right {
+		@include shift(3);
+	}
+}

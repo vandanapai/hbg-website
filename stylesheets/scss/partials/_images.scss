@@ -1,0 +1,35 @@
+/* HERO IMAGES */
+
+.hero-bridge {
+	background: url('../../assets/img/hero-bridge.png') no-repeat center center;
+	// z-index: -1;
+	// position: relative;
+	// overflow: hidden;
+
+
+	//@include mobile {
+		//background-image: url('../../img/hero-boat-small.jpg');
+	//}
+}
+
+.hero-mountain-range {
+	background: url('../../assets/img/hero-mountain-range.png') no-repeat center center;
+	//@include mobile {
+		//background-image: url('../../img/hero-boat-small.jpg');
+	//}
+}
+
+.hero-mountains {
+	background: url('../../assets/img/hero-mountains.png') no-repeat center center;	
+}
+
+.hero-bridge2 {
+	background: url('../../assets/img/hero-bridge2.jpeg') no-repeat center center;
+}
+
+.img-accent-rocks {
+	background: url('../../assets/img/accent-rocks.png') no-repeat center center;
+	background-size: cover;
+	height: 750px;
+}
+
