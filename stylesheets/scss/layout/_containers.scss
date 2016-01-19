@@ -12,7 +12,7 @@
 
 }
 
-.grid-container, .content-container, .sub-container, article, aside {
+.grid-container, .content-container, .sub-container, article, aside, .table-half {
 
 	&.dark-blue {
 		background-color: $darkest-blue-container;
@@ -95,19 +95,15 @@ display: table-cell;
   padding: 1rem;
   float: left;
   height: 500px;
+
+  img {
+  	margin: 40px;
+  }
+
   @include box(vertical, center, center);
 
   @include media($mobile) {
   	width: 100%;
-  }
-
-  &.left {
-  	background-color: $light-container;
-  }
-
-  &.right {
-  	background-color: $gold-container;
-
   }
 }
 

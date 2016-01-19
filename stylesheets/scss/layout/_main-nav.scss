@@ -1,8 +1,8 @@
 .main-nav-container {
-	position: fixed;
+	position: absolute;
 	background-color: $main-nav-background;
 	width: 100%;
-	height: 106px;
+	height: 100px;
 	z-index: 5000;
 	padding: 25px;
 
@@ -38,4 +38,11 @@
 	&.bottom {
 		bottom: 0;
 	}
+}
+
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 100px; 
+	z-index: 1;
 }

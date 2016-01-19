@@ -9,5 +9,17 @@ $(document).ready(function () {
 
 		return false;
 	});
-});
+
+	  $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 100;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('.main-nav-container').addClass('fixed');
+			 }
+			 else {
+				 $('.main-nav-container').removeClass('fixed');
+			 }
+		});
+	
+	});
+
 

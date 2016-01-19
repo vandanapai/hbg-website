@@ -424,8 +424,11 @@ button {
 
 .img-accent-rocks {
   background: url("../../assets/img/accent-rocks.png") no-repeat center center;
-  background-size: cover;
-  height: 750px; }
+  background-size: cover; }
+
+.img-accent-suspension-bridge {
+  background: url("../../assets/img/accent-suspension-bridge.jpeg") no-repeat center center;
+  background-size: cover; }
 
 .contact-form-container {
   max-width: 600px;
@@ -490,15 +493,15 @@ button {
   .grid-container.centered {
     text-align: center; }
 
-.grid-container.dark-blue, .content-container.dark-blue, .sub-container.dark-blue, article.dark-blue, aside.dark-blue {
+.grid-container.dark-blue, .content-container.dark-blue, .sub-container.dark-blue, article.dark-blue, aside.dark-blue, .table-half.dark-blue {
   background-color: #0F1319; }
-.grid-container.light-blue, .content-container.light-blue, .sub-container.light-blue, article.light-blue, aside.light-blue {
+.grid-container.light-blue, .content-container.light-blue, .sub-container.light-blue, article.light-blue, aside.light-blue, .table-half.light-blue {
   background-color: #3D5568; }
-.grid-container.blue, .content-container.blue, .sub-container.blue, article.blue, aside.blue {
+.grid-container.blue, .content-container.blue, .sub-container.blue, article.blue, aside.blue, .table-half.blue {
   background-color: #1C2634; }
-.grid-container.gold, .content-container.gold, .sub-container.gold, article.gold, aside.gold {
+.grid-container.gold, .content-container.gold, .sub-container.gold, article.gold, aside.gold, .table-half.gold {
   background-color: #D3A031; }
-.grid-container.light, .content-container.light, .sub-container.light, article.light, aside.light {
+.grid-container.light, .content-container.light, .sub-container.light, article.light, aside.light, .table-half.light {
   background-color: #FFFFFF; }
 
 .hero-container {
@@ -582,13 +585,11 @@ button {
   -moz-box-align: center;
   box-align: center;
   -ms-flex-align: center; }
+  .table-half img {
+    margin: 40px; }
   @media screen and (max-width: 480px) {
     .table-half {
       width: 100%; } }
-  .table-half.left {
-    background-color: #FFFFFF; }
-  .table-half.right {
-    background-color: #D3A031; }
 
 .table-left-text-wrap {
   max-width: 400px; }
@@ -640,10 +641,10 @@ button {
     margin-left: 25.86207%; }
 
 .main-nav-container {
-  position: fixed;
+  position: absolute;
   background-color: #FFFFFF;
   width: 100%;
-  height: 106px;
+  height: 100px;
   z-index: 5000;
   padding: 25px; }
   .main-nav-container .main-nav {
@@ -663,6 +664,12 @@ button {
         padding-right: 20px; }
   .main-nav-container.bottom {
     bottom: 0; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  z-index: 1; }
 
 footer {
   background-color: #6F849C;
