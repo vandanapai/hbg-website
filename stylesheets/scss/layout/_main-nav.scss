@@ -6,6 +6,8 @@
 	z-index: 5000;
 	padding: 25px;
 
+	@include transition(all 0.1s);
+
 
 	.main-nav {
 		max-width: $body-max-width;
@@ -43,6 +45,6 @@
 .fixed {
 	position: fixed; 
 	top: 0; 
-	height: 100px; 
+	height: 75px; 
 	z-index: 1;
 }

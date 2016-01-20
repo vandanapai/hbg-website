@@ -16,3 +16,11 @@ button {
 		color: $pure-white;
 	}
 }
+
+input[type=submit] {
+    @extend button;
+    @extend .gold;
+
+    background-color: $gold-button !important;
+    
+}

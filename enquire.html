@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-4">
                         <img src="assets/icons/email-icon.png"><h3>Email</h3>
-                        <p>info@kbgbenefits.com</p>
+                        <p>info@hbgbenefits.com</p>
                     </div>
                 </section>
             </div>
@@ -89,35 +89,35 @@
             <div class="content-container light">
                 <section class="grid-container">
                 <h2 class="blue">General Inquiries</h2>
-                    <form class="contact-form-container">
+                    <form action="mail.php" method="POST" class="contact-form-container">
                         <div class="form-row">
                             <div class="form-column-half">
                                 <label class="input-label" for="first_name">First Name</label>
-                                <input type="text" id="first_name" required autocomplete="off" />
+                                <input type="text" id="first_name" name="first_name" required autocomplete="off" />
                             </div>
                             <div class="form-column-half">
                                 <label class="input-label" for="last_name">Last Name</label>
-                                <input type="text" id="last_name" required autocomplete="off" />
+                                <input type="text" id="last_name" name="last_name" required autocomplete="off" />
                             </div> 
                         </div>   
                         <div class="form-row">
                             <div class="form-column-half">
                                 <label class="input-label" for="email_address">E-mail Address</label>
-                                <input type="text" id="email_address" required autocomplete="off" />
+                                <input type="text" id="email_address" name="email" required autocomplete="off" />
                             </div>
                             <div class="form-column-half">
                                 <label class="input-label" for="phone_number">Phone Number</label>
-                                <input type="text" id="phone_number" required autocomplete="off" />
+                                <input type="text" id="phone_number" name="phone_number" required autocomplete="off" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-column-half">
                                 <label class="input-label" for="company_name">Company Name</label>
-                                <input type="text" id="company_name" required autocomplete="off" />
+                                <input type="text" id="company_name" name="company" required autocomplete="off" />
                             </div>
                              <div class="form-column-half">
                                 <label class="input-label" for="company_size">Company Size</label>
-                                <select id="company_size">
+                                <select id="company_size" name="company_size">
                                     <option>1-50</option>
                                     <option>51-100</option>
                                     <option>100-500</option>
@@ -129,20 +129,18 @@
                         <div class="form-row">
                             <div class="form-column-full">
                                 <label class="input-label" for="subject">Subject</label>
-                                <input type="text" id="subject" required autocomplete="off" />
+                                <input type="text" id="subject" name="subject" required autocomplete="off" />
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-column-full">
                                 <label class="input-label" for="message">Message</label>
-                                <textarea for="message" id="message"></textarea>
+                                <textarea for="message" id="message" name="message"></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-button-wrap">
-                                <button class="gold">
-                                    Submit
-                                </button>
+                                <input type="submit" name="submit"/>
                             </div>
                         </div>
                     </form>
@@ -175,6 +173,30 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','YOUR NUMBER HERE','auto');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+
+        $("form").on("submit", function(e){
+            e.preventDefault();
+
+            var data = $('form').serializeArray().reduce(function(obj, item) {
+                obj[item.name] = item.value;
+                return obj;
+            }, {});
+
+            console.log(data);
+
+            $.ajax({
+                method: "POST",
+                url: "mail.php",
+                data: data
+            }).done(function() {
+                $(".contact-form-container").html("Your mail has been sent successfuly! We will be in touch with you shortly.")
+            });
+
+        })
+
         </script>
     </body>
 </html>
