@@ -509,6 +509,8 @@ input[type=submit] {
   background-color: #D3A031; }
 .grid-container.light, .content-container.light, .sub-container.light, article.light, aside.light, .table-half.light {
   background-color: #FFFFFF; }
+.grid-container.light-grey, .content-container.light-grey, .sub-container.light-grey, article.light-grey, aside.light-grey, .table-half.light-grey {
+  background-color: #ECECEC; }
 
 .hero-container {
   height: 100vh;
@@ -680,10 +682,17 @@ input[type=submit] {
   height: 75px;
   z-index: 1; }
 
+.sticky {
+  position: fixed; }
+
 footer {
   background-color: #6F849C;
   text-align: center;
-  height: 250px;
+  height: auto;
   padding: 50px; }
+  footer img {
+    margin-bottom: 20px; }
+  footer p:last-child {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
