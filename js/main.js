@@ -10,7 +10,7 @@ $(document).ready(function () {
 		return false;
 	});
 
-	  $(window).bind('scroll', function() {
+	$(window).bind('scroll', function() {
 	   var navHeight = $( window ).height() - 100;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.main-nav-container').addClass('fixed');
@@ -18,8 +18,24 @@ $(document).ready(function () {
 			 else {
 				 $('.main-nav-container').removeClass('fixed');
 			 }
-		});
-	
 	});
+
+    $('div[data-type="background"]').each(function(){
+		console.log('hello');
+        var $bgobj = $(this); // assigning the object
+    
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+            
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    });    
+
+	
+});
 
 

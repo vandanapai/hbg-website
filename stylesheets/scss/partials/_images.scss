@@ -1,10 +1,17 @@
 /* HERO IMAGES */
 
 .hero-bridge {
-	background: url('../../assets/img/hero-bridge.png') no-repeat center center;
+	// background: url('../../assets/img/hero-bridge.png') no-repeat center center;
+		background: url('../../assets/img/hero-bridge.png')  50% 0 repeat fixed;
+
 	// z-index: -1;
 	// position: relative;
 	// overflow: hidden;
+	 height: 1000px; 
+  	margin: 0 auto; 
+  	width: 100%; 
+  	max-width: 1920px; 
+  	position: relative; 
 
 
 	//@include mobile {

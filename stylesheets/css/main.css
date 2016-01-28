@@ -443,7 +443,12 @@ input[type=submit] {
 
 /* HERO IMAGES */
 .hero-bridge {
-  background: url("../../assets/img/hero-bridge.png") no-repeat center center; }
+  background: url("../../assets/img/hero-bridge.png") 50% 0 repeat fixed;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative; }
 
 .hero-mountain-range {
   background: url("../../assets/img/hero-mountain-range.png") no-repeat center center; }
