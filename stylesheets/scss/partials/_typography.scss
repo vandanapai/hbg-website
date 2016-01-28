@@ -43,9 +43,11 @@ h1 {
 
 h2 {
 	font: 100% $sans-font-stack;
-	font-size: 2.25em;
+	font-size: 1.25em;
 	font-weight: 700;
 	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: $sans-letter-spacing;
 
 	&.light {
 		color: $heading-font-color-light;

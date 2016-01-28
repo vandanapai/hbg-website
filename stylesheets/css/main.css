@@ -250,9 +250,11 @@ h1 {
 
 h2 {
   font: 100% "Din", sans-serif;
-  font-size: 2.25em;
+  font-size: 1.25em;
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
   h2.light {
     color: #FFFFFF; }
   h2.blue {
@@ -634,6 +636,10 @@ input[type=submit] {
   -ms-flex-align: center; }
   .table-half img {
     margin: 40px; }
+  .table-half.third {
+    width: 35%; }
+  .table-half.two-third {
+    width: 65%; }
   @media screen and (max-width: 480px) {
     .table-half {
       width: 100%; } }

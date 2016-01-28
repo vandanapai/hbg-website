@@ -97,7 +97,7 @@
 }
 
 .table-half {
-display: table-cell;
+	display: table-cell;
   text-align: center;
   vertical-align: middle;
   width: 50%;
@@ -107,6 +107,14 @@ display: table-cell;
 
   img {
   	margin: 40px;
+  }
+
+  &.third {
+  	width: 35%;
+  }
+
+  &.two-third {
+  	width: 65%;
   }
 
   @include box(vertical, center, center);
