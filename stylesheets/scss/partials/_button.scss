@@ -1,26 +1,69 @@
+/* button reset */
+
 button {
-	padding: 12px 50px 12px 50px;
-	background-color: $white-button;	
-	font-family: $sans-font-stack;
-	text-transform: uppercase;
-	font-weight: 700;
-	border-radius: 0px;
-	font-size: .75em;
-	letter-spacing: .1em;
-	outline: none;
 	border: none;
-	@include transition(all .2s ease-in-out);
+	border-radius: 0px;
+	width: 245px;
+	font-family: $sans-font-stack;
+	font-size: 0.75em;
+	font-weight: 700;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 12px 50px 12px 50px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	@include transition(all 0.3s);
+
+	&.white {
+		border: 2px solid $pure-white;
+
+		&:hover {
+			background-color: $pure-white;
+			color: $gold;
+		}
+		
+	}
 
 	&.gold {
-		background-color: $gold-button;
-		color: $pure-white;
+		background-color: none;
+		color: $gold;
+		border: 2px solid $gold;
 	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:after {
+		content: ' ';
+		position: absolute;
+		z-index: -1;
+		@include transition(all 0.3s);
+	}
+
 }
+
 
 input[type=submit] {
     @extend button;
     @extend .gold;
 
-    background-color: $gold-button !important;
-    
+    background-color: $gold !important;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 245px !important;
+    padding: 12px 50px 12px 50px !important;
 }
+
+
+
+
+ 
+

@@ -27,7 +27,7 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: #ECECEC;
+  background: #3D5568;
   color: #000;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
@@ -392,26 +392,54 @@ ul.services-list-data li:before {
   content: "▪ ";
   color: white; }
 
+/* button reset */
 button, input[type=submit] {
-  padding: 12px 50px 12px 50px;
-  background-color: #FFFFFF;
-  font-family: "Din", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 0px;
-  font-size: .75em;
-  letter-spacing: .1em;
-  outline: none;
   border: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  border-radius: 0px;
+  width: 245px;
+  font-family: "Din", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 12px 50px 12px 50px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  button.white, input.white[type=submit] {
+    border: 2px solid #FFFFFF; }
+    button.white:hover, input.white[type=submit]:hover {
+      background-color: #FFFFFF;
+      color: #D3A031; }
   button.gold, input[type=submit] {
-    background-color: #D3A031;
-    color: #FFFFFF; }
+    background-color: none;
+    color: #D3A031;
+    border: 2px solid #D3A031; }
+  button:focus, input[type=submit]:focus {
+    outline: none; }
+  button:after, input[type=submit]:after {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
 
 input[type=submit] {
-  background-color: #D3A031 !important; }
+  background-color: #D3A031 !important;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  width: 245px !important;
+  padding: 12px 50px 12px 50px !important; }
 
 /* HERO IMAGES */
 .hero-bridge {
@@ -679,7 +707,6 @@ input[type=submit] {
 .fixed {
   position: fixed;
   top: 0;
-  height: 75px;
   z-index: 1; }
 
 .sticky {
