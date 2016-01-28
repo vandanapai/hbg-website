@@ -267,6 +267,8 @@ h3 {
   font-style: normal;
   letter-spacing: 2px;
   color: #D3A031; }
+  h3.light {
+    color: #FFFFFF; }
 
 p {
   font: 100% "Din", sans-serif;
@@ -444,20 +446,23 @@ input[type=submit] {
 /* HERO IMAGES */
 .hero-bridge {
   background: url("../../assets/img/hero-bridge.png") 50% 0 repeat fixed;
-  height: 1000px;
-  margin: 0 auto;
-  width: 100%;
   max-width: 1920px;
   position: relative; }
 
 .hero-mountain-range {
-  background: url("../../assets/img/hero-mountain-range.png") no-repeat center center; }
+  background: url("../../assets/img/hero-mountain-range.png") 50% 0 repeat fixed;
+  max-width: 1920px;
+  position: relative; }
 
 .hero-mountains {
-  background: url("../../assets/img/hero-mountains.png") no-repeat center center; }
+  background: url("../../assets/img/hero-mountains.png") 50% 0 repeat fixed;
+  max-width: 1920px;
+  position: relative; }
 
 .hero-bridge2 {
-  background: url("../../assets/img/hero-bridge2.jpeg") no-repeat center center; }
+  background: url("../../assets/img/hero-bridge2.jpeg") 50% 0 repeat fixed;
+  max-width: 1920px;
+  position: relative; }
 
 .img-accent-rocks {
   background: url("../../assets/img/accent-rocks.png") no-repeat center center;
@@ -550,6 +555,7 @@ input[type=submit] {
   width: 100vw;
   background-size: cover;
   left: 0;
+  position: relative;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

@@ -67,6 +67,10 @@ h3 {
 	font-style: normal;
 	letter-spacing: $serif-letter-spacing;
 	color: $heading-font-color-gold;
+
+	&.light {
+		color: $heading-font-color-light;
+	}
 }
 
 h5 {

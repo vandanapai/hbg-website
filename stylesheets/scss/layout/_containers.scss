@@ -49,6 +49,7 @@
 	width: 100vw;
 	background-size: cover;
 	left: 0;
+	position: relative;
 	@include box(vertical, center, center);
 }
 
