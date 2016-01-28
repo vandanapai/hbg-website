@@ -27,13 +27,17 @@ button {
 			background-color: $pure-white;
 			color: $gold;
 		}
-		
 	}
 
 	&.gold {
-		background-color: none;
-		color: $gold;
+		background-color: $gold;
+		color: $pure-white;
 		border: 2px solid $gold;
+
+		&:hover {
+			background-color: $pure-white;
+			color: $gold;
+		}
 	}
 
 	&:focus {
@@ -60,6 +64,13 @@ input[type=submit] {
     color: white;
     width: 245px !important;
     padding: 12px 50px 12px 50px !important;
+    border: 2px solid $gold !important;
+
+
+    &:hover {
+    	background-color: $pure-white !important;
+    	border: 2px solid $gold;
+    }
 }
 
 

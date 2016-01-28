@@ -424,9 +424,12 @@ button, input[type=submit] {
       background-color: #FFFFFF;
       color: #D3A031; }
   button.gold, input[type=submit] {
-    background-color: none;
-    color: #D3A031;
+    background-color: #D3A031;
+    color: #FFFFFF;
     border: 2px solid #D3A031; }
+    button.gold:hover, input[type=submit]:hover {
+      background-color: #FFFFFF;
+      color: #D3A031; }
   button:focus, input[type=submit]:focus {
     outline: none; }
   button:after, input[type=submit]:after {
@@ -443,7 +446,11 @@ input[type=submit] {
   margin-right: auto;
   color: white;
   width: 245px !important;
-  padding: 12px 50px 12px 50px !important; }
+  padding: 12px 50px 12px 50px !important;
+  border: 2px solid #D3A031 !important; }
+  input[type=submit]:hover {
+    background-color: #FFFFFF !important;
+    border: 2px solid #D3A031; }
 
 /* HERO IMAGES */
 .hero-bridge {
