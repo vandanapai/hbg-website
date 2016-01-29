@@ -488,7 +488,6 @@ input[type=submit] {
   .contact-form-container label {
     color: #0B0C0A;
     display: block;
-    padding: 40px 5px 5px 2px;
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -736,6 +735,9 @@ input[type=submit] {
 .sticky {
   position: fixed; }
 
+.mobile {
+  background-color: #D3A031; }
+
 footer {
   background-color: #6F849C;
   text-align: center;
@@ -745,5 +747,7 @@ footer {
     margin-bottom: 20px; }
   footer p:last-child {
     margin-bottom: 0; }
+  footer img {
+    max-width: 40px; }
 
 /*# sourceMappingURL=main.css.map */
