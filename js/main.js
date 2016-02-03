@@ -21,7 +21,6 @@ $(document).ready(function () {
 	});
 
     $('div[data-type="background"]').each(function(){
-		console.log('hello');
         var $bgobj = $(this); // assigning the object
     
         $(window).scroll(function() {
@@ -33,7 +32,18 @@ $(document).ready(function () {
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
         }); 
-    });    
+    });  
+
+    wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+    wow.init();  
 
 	
 });
