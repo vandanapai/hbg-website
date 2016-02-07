@@ -32,6 +32,14 @@ $(document).ready(function () {
         }); 
     });  
 
+    $('.mobile-menu-btn').on('click', function () {
+      $('.overlay-nav').show();
+    });
+
+    $('.nav-close-btn').on('click', function () {
+      $('.overlay-nav').hide();
+    });
+
     wow = new WOW(
                       {
                       boxClass:     'wow',      // default

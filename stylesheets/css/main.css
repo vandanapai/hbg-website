@@ -1137,6 +1137,41 @@ input[type=submit] {
     .mobile-menu-btn {
       display: none; } }
 
+.overlay-nav {
+  display: none;
+  background: #D3A031;
+  width: 100%;
+  height: 100%;
+  z-index: 6000;
+  text-align: center;
+  position: fixed;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
+  .overlay-nav .overlay-nav-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -ms-flex-align: center; }
+  .overlay-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .overlay-nav ul li {
+      margin-bottom: 40px; }
+
 footer {
   background-color: #6F849C;
   text-align: center;
