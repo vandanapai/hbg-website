@@ -47,7 +47,11 @@
 .form-column-half {
 	width: 50%;
 
-	@include media($mobile) {
+	@include media($small) {
+		width: 100%;
+	}
+
+	@include media($medium) {
 		width: 100%;
 	}
 }

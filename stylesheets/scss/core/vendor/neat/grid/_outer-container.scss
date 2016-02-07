@@ -36,11 +36,15 @@
     right: auto;
   }
 
+  @media screen and (max-width: 1050px){
+    max-width: $max-width-large;
+  }
+
   @media screen and (max-width: 768px){
-	max-width: $max-width-tablet;
+	max-width: $max-width-medium;
   }
 
    @media screen and (max-width: 480px){
-	max-width: $max-width-mobile;
+	max-width: $max-width-small;
   }
 }

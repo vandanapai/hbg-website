@@ -119,7 +119,7 @@
 
   @include box(vertical, center, center);
 
-  @include media($mobile) {
+  @include media($small) {
   	width: 100%;
   }
 }
