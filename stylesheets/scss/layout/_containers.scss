@@ -3,6 +3,8 @@
 // 	margin: 0 auto;
 // }
 
+
+
 .grid-container{
 	@include outer-container;
 
@@ -97,11 +99,10 @@
 }
 
 .table-half {
-	display: table-cell;
+  display: table-cell;
   text-align: center;
   vertical-align: middle;
   width: 50%;
-  padding: 1rem;
   float: left;
   height: 500px;
 
@@ -111,10 +112,18 @@
 
   &.third {
   	width: 35%;
+
+  	@include media($small) {
+  		width: 100%;
+  	}
   }
 
   &.two-third {
   	width: 65%;
+
+   	@include media($small) {
+  		width: 100%;
+  	}
   }
 
   @include box(vertical, center, center);
@@ -125,7 +134,7 @@
 }
 
 .table-left-text-wrap {
-	max-width: 400px;
+	max-width: inherit;
 }
 
 .col-12 {

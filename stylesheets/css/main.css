@@ -745,7 +745,6 @@ button, input[type=submit] {
   cursor: pointer;
   padding: 12px 50px 12px 50px;
   display: inline-block;
-  margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -964,7 +963,6 @@ input[type=submit] {
   text-align: center;
   vertical-align: middle;
   width: 50%;
-  padding: 1rem;
   float: left;
   height: 500px;
   display: -webkit-box;
@@ -986,14 +984,20 @@ input[type=submit] {
     margin: 40px; }
   .table-half.third {
     width: 35%; }
+    @media screen and (max-width: 480px) {
+      .table-half.third {
+        width: 100%; } }
   .table-half.two-third {
     width: 65%; }
+    @media screen and (max-width: 480px) {
+      .table-half.two-third {
+        width: 100%; } }
   @media screen and (max-width: 480px) {
     .table-half {
       width: 100%; } }
 
 .table-left-text-wrap {
-  max-width: 400px; }
+  max-width: inherit; }
 
 .col-12 {
   float: left;
