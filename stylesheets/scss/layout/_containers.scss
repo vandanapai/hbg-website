@@ -53,6 +53,10 @@
 	left: 0;
 	position: relative;
 	@include box(vertical, center, center);
+
+	@include media($small) {
+		height: 80vh;
+	}
 }
 
 .content-container {
@@ -71,10 +75,20 @@
 	&.text-right-align {
 		text-align: right;
 	}
+
+	@include media($small) {
+		padding: 20px;
+	}
 }
 
 .bg-img-container {
 	position: relative;
+}
+
+.page-container {
+	@include media($small) {
+		padding-top: 80px;
+	}
 }
 
 .cta-container{
@@ -105,6 +119,7 @@
   width: 50%;
   float: left;
   height: 500px;
+  padding: 0 8%;
 
   img {
   	margin: 40px;
@@ -130,6 +145,7 @@
 
   @include media($small) {
   	width: 100%;
+  	padding: 0 10%;
   }
 }
 
@@ -159,6 +175,7 @@
 	&.offset-right {
 		@include shift(5);
 	}
+
 }
 
 .col-4 {
@@ -166,5 +183,12 @@
 
 	&.offset-right {
 		@include shift(3);
+	}
+}
+
+.col-4, .col-6, .col-8, .col-10, .col-12 {
+
+	@include media($small) {
+		@include span-columns(4);
 	}
 }
