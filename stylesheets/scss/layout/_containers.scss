@@ -69,6 +69,8 @@
 	margin-top: 50px;
 	padding: 100px;
 
+	@include span-columns(12);
+
 	p {
 		max-width: 500px;
 	}
@@ -80,6 +82,18 @@
 	@include media($small) {
 		padding: 20px;
 	}
+}
+
+.sub-container-content {
+	@include span-columns(9);
+
+	&.right {
+		text-align: right;
+	}
+}
+
+.sub-container-img {
+	@include span-columns(3);
 }
 
 .bg-img-container {
