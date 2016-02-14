@@ -583,6 +583,9 @@ h1 {
     font-style: italic;
     letter-spacing: 0;
     font-size: 3em; }
+    @media screen and (max-width: 480px) {
+      h1.quote {
+        font-size: 2em; } }
 
 h2 {
   font: 100% "Din", sans-serif;
@@ -814,6 +817,11 @@ input[type=submit] {
   max-width: 1920px;
   position: relative; }
 
+.hero-tree {
+  background: url("../../assets/img/hero-tree.jpg") 50% 0 repeat fixed;
+  max-width: 1920px;
+  position: relative; }
+
 .img-accent-rocks {
   background: url("../../assets/img/accent-rocks.png") no-repeat center center;
   background-size: cover; }
@@ -821,6 +829,20 @@ input[type=submit] {
 .img-accent-suspension-bridge {
   background: url("../../assets/img/accent-suspension-bridge.jpeg") no-repeat center center;
   background-size: cover; }
+
+.img-accent-mtn1 {
+  background: url("../../assets/img/accent-mtn1.jpg") no-repeat center center;
+  background-size: cover; }
+
+.img-accent-mtn2 {
+  background: url("../../assets/img/accent-mtn2.jpeg") no-repeat center center;
+  background-size: cover; }
+
+.dimmer {
+  background-image: -webkit-linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%);
+  background-image: linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%);
+  height: 100%;
+  width: 100%; }
 
 .contact-form-container {
   max-width: 600px;
@@ -909,6 +931,7 @@ input[type=submit] {
 .hero-container {
   height: 100vh;
   width: 100vw;
+  padding: 0 10%;
   background-size: cover;
   left: 0;
   position: relative;
@@ -982,7 +1005,6 @@ input[type=submit] {
   width: 50%;
   float: left;
   height: 500px;
-  padding: 0 8%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1001,12 +1023,12 @@ input[type=submit] {
   .table-half img {
     margin: 40px; }
   .table-half.third {
-    width: 35%; }
+    width: 40%; }
     @media screen and (max-width: 480px) {
       .table-half.third {
         width: 100%; } }
   .table-half.two-third {
-    width: 65%; }
+    width: 60%; }
     @media screen and (max-width: 480px) {
       .table-half.two-third {
         width: 100%; } }
@@ -1016,7 +1038,7 @@ input[type=submit] {
       padding: 0 10%; } }
 
 .table-left-text-wrap {
-  max-width: inherit; }
+  max-width: 400px; }
 
 .col-12 {
   float: left;
@@ -1131,7 +1153,8 @@ input[type=submit] {
     bottom: 0; }
     @media screen and (max-width: 480px) {
       .main-nav-container.bottom {
-        top: 0; } }
+        top: 0;
+        position: fixed; } }
 
 .fixed {
   position: fixed;

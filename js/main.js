@@ -33,7 +33,7 @@ $(document).ready(function () {
     });  
 
     $('.mobile-menu-btn').on('click', function () {
-      $('.overlay-nav').fadeIn();
+      $('.overlay-nav').fadeIn(4000);
     });
 
     $('.nav-close-btn').on('click', function () {

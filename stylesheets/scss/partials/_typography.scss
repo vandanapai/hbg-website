@@ -39,6 +39,10 @@ h1 {
 		font-style: italic;
 		letter-spacing: 0;
 		font-size: 3em;
+
+		@include media($small) {
+			font-size: 2em;
+		}
 	}
 }
 

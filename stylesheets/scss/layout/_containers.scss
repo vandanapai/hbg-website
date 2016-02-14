@@ -49,6 +49,7 @@
 .hero-container {
 	height: 100vh;
 	width: 100vw;
+	padding: 0 10%;
 	background-size: cover;
 	left: 0;
 	position: relative;
@@ -119,14 +120,13 @@
   width: 50%;
   float: left;
   height: 500px;
-  padding: 0 8%;
 
   img {
   	margin: 40px;
   }
 
   &.third {
-  	width: 35%;
+  	width: 40%;
 
   	@include media($small) {
   		width: 100%;
@@ -134,7 +134,7 @@
   }
 
   &.two-third {
-  	width: 65%;
+  	width: 60%;
 
    	@include media($small) {
   		width: 100%;
@@ -150,7 +150,7 @@
 }
 
 .table-left-text-wrap {
-	max-width: inherit;
+	max-width: 400px;
 }
 
 .col-12 {

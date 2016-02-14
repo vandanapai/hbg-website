@@ -74,6 +74,7 @@
 
 		@include media($small) {
 			top: 0;
+			position: fixed;
 		}
 	}
 }

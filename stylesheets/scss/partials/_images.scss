@@ -33,6 +33,12 @@
   	position: relative; 
 }
 
+.hero-tree {
+	background: url('../../assets/img/hero-tree.jpg') 50% 0 repeat fixed;
+	max-width: 1920px; 
+  	position: relative; 
+}
+
 .img-accent-rocks {
 	background: url('../../assets/img/accent-rocks.png') no-repeat center center;
 	background-size: cover;
@@ -43,3 +49,19 @@
 	background-size: cover;
 }
 
+
+.img-accent-mtn1 {
+	background: url('../../assets/img/accent-mtn1.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.img-accent-mtn2 {
+	background: url('../../assets/img/accent-mtn2.jpeg') no-repeat center center;
+	background-size: cover;
+}
+
+.dimmer {
+    @include background-image(linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%));
+    height: 100%;
+    width: 100%;
+}
