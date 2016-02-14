@@ -909,7 +909,8 @@ input[type=submit] {
       max-width: 50em; } }
   @media screen and (max-width: 768px) {
     .grid-container {
-      max-width: 40.625em; } }
+      max-width: 40.625em;
+      padding: 0 10%; } }
   @media screen and (max-width: 480px) {
     .grid-container {
       max-width: 26.25em;
@@ -985,6 +986,14 @@ input[type=submit] {
   width: 74.13793%; }
   .sub-container-content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .sub-container-content {
+      float: left;
+      display: block;
+      margin-right: 11.11111%;
+      width: 100%; }
+      .sub-container-content:last-child {
+        margin-right: 0; } }
   .sub-container-content.right {
     text-align: right; }
 
@@ -995,6 +1004,16 @@ input[type=submit] {
   width: 22.41379%; }
   .sub-container-img:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .sub-container-img {
+      float: left;
+      display: block;
+      margin-right: 11.11111%;
+      width: 100%; }
+      .sub-container-img:last-child {
+        margin-right: 0; }
+      .sub-container-img img {
+        width: 50%; } }
 
 .bg-img-container {
   position: relative; }
@@ -1012,7 +1031,7 @@ input[type=submit] {
 
 .quote-container {
   text-align: center;
-  margin-left: 17.24138%;
+  margin-left: 55.55556%;
   float: left;
   display: block;
   margin-right: 3.44828%;
@@ -1053,17 +1072,20 @@ input[type=submit] {
     float: left; }
   .table-half.third {
     width: 40%; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .table-half.third {
         width: 100%; } }
   .table-half.two-third {
     width: 60%; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .table-half.two-third {
         width: 100%; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .table-half {
       width: 100%;
+      padding: 0 20%; } }
+  @media screen and (max-width: 480px) {
+    .table-half {
       padding: 0 10%; } }
 
 .table-left-text-wrap {
@@ -1115,6 +1137,14 @@ input[type=submit] {
   .col-4.offset-right {
     margin-left: 25.86207%; }
 
+@media screen and (max-width: 768px) {
+  .col-4, .col-6, .col-8, .col-10, .col-12 {
+    float: left;
+    display: block;
+    margin-right: 5.26316%;
+    width: 100%; }
+    .col-4:last-child, .col-6:last-child, .col-8:last-child, .col-10:last-child, .col-12:last-child {
+      margin-right: 0; } }
 @media screen and (max-width: 480px) {
   .col-4, .col-6, .col-8, .col-10, .col-12 {
     float: left;

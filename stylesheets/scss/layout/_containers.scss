@@ -87,6 +87,10 @@
 .sub-container-content {
 	@include span-columns(9);
 
+	@include media($small) {
+		@include span-columns(4);
+	}
+
 	&.right {
 		text-align: right;
 	}
@@ -94,6 +98,14 @@
 
 .sub-container-img {
 	@include span-columns(3);
+
+	@include media($small) {
+		@include span-columns(4);
+
+		img {
+			width: 50%;
+		}
+	}
 }
 
 .bg-img-container {
@@ -145,7 +157,7 @@
   &.third {
   	width: 40%;
 
-  	@include media($small) {
+  	@include media($medium) {
   		width: 100%;
   	}
   }
@@ -153,15 +165,19 @@
   &.two-third {
   	width: 60%;
 
-   	@include media($small) {
+   	@include media($medium) {
   		width: 100%;
   	}
   }
 
   @include box(vertical, center, center);
 
-  @include media($small) {
+  @include media($medium) {
   	width: 100%;
+  	padding: 0 20%;
+  }
+
+  @include media($small) {
   	padding: 0 10%;
   }
 }
@@ -204,6 +220,10 @@
 }
 
 .col-4, .col-6, .col-8, .col-10, .col-12 {
+
+	@include media($medium) {
+		@include span-columns(8);
+	}
 
 	@include media($small) {
 		@include span-columns(4);
