@@ -33,11 +33,11 @@ $(document).ready(function () {
     });  
 
     $('.mobile-menu-btn').on('click', function () {
-      $('.overlay-nav').fadeIn(4000);
+      $('.overlay-nav').fadeIn(300);
     });
 
     $('.nav-close-btn').on('click', function () {
-      $('.overlay-nav').hide();
+      $('.overlay-nav').fadeOut(300);
     });
 
     wow = new WOW(

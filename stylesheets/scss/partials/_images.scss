@@ -64,4 +64,9 @@
     @include background-image(linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%));
     height: 100%;
     width: 100%;
+
+    &.gold {
+    	@include background-image(linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%));
+
+    }
 }

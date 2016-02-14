@@ -843,11 +843,15 @@ input[type=submit] {
   background-image: linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%);
   height: 100%;
   width: 100%; }
+  .dimmer.gold, input.dimmer[type=submit] {
+    background-image: -webkit-linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%);
+    background-image: linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%); }
 
 .contact-form-container {
   max-width: 600px;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  color: #0B0C0A; }
   .contact-form-container label {
     color: #0B0C0A;
     display: block;
@@ -1003,7 +1007,6 @@ input[type=submit] {
   text-align: center;
   vertical-align: middle;
   width: 50%;
-  float: left;
   height: 500px;
   display: -webkit-box;
   display: -moz-box;
@@ -1022,6 +1025,8 @@ input[type=submit] {
   -ms-flex-align: center; }
   .table-half img {
     margin: 40px; }
+  .table-half.left {
+    float: left; }
   .table-half.third {
     width: 40%; }
     @media screen and (max-width: 480px) {
@@ -1203,10 +1208,7 @@ input[type=submit] {
   height: 100%;
   z-index: 5001;
   text-align: center;
-  position: fixed;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out; }
+  position: fixed; }
   .overlay-nav .overlay-nav-container {
     height: 100%;
     display: -webkit-box;
