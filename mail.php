@@ -9,7 +9,7 @@
 	$msg = $_POST['message'];
 	$message = wordwrap($msg, 70);
 	$formcontent="From: $name \n Phone Number: $phonenumber \n Company: $company \n Company Size: $companysize \n Message: $message";
-	$recipient = "vandanapai01@gmail.com";
+	$recipient = "info@hbgbenefits.com";
 
 	$headers = 'From:'. $email . "\r\n"; // Sender's Email
 	$headers = 'Cc:'. $email . "\r\n"; // Carbon copy to Sender
