@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-	$('.hidden').hide();
+
+  $('.hidden').hide();
 	$('.sub-nav-link').on('click', function () {
 
 		$('.target-description').hide();

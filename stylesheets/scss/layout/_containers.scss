@@ -18,7 +18,7 @@
 
 }
 
-.grid-container, .content-container, .sub-container, article, aside, .table-half {
+.grid-container, .content-container, .sub-container, article, aside, .table-half, .sub-link-dropdown-container {
 
 	&.dark-blue {
 		background-color: $darkest-blue-container;
@@ -128,8 +128,8 @@
 
 .quote-container {
 	text-align: center;
-	@include shift(2);
-	@include span-columns(8);
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .table-container {
