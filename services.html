@@ -102,14 +102,20 @@
         </header>
 
         <body>
+
+
             <div class="content-container table-container">
-                    <section class="table-half left light">
+                    <section class="table-half left light responsive-hide">
                         <div class="table-left-text-wrap">
                             <h3 class="dark">Insurance Services</h3>
                         </div>
                     </section>
-                    <section class="table-half right gold">
-                        <nav class="sub-link-container">
+                    <section class="table-half right gold responsive-resize" id="sub-link-nav-table">
+                        <div class="dropdown-menu-header responsive-show">
+                            <h4 id="sub-link-dropdown-button">All Insurance Services</h4><img src="assets/icons/triangle-carat-expand.png" id="arrowRotate" data-swap="assets/icons/triangle-carat-collapse.png">
+                        </div>
+                        <nav class="sub-link-container responsive-hide" id="sub-link-nav-list">
+
                             <ul>
                                 <li><a href="" class="sub-nav-link" data-target="1">Client Succcess Services</a></li>
                                 <li><a href="" class="sub-nav-link" data-target="2">Reporting and Insights</a></li>
@@ -117,10 +123,8 @@
                                 <li><a href="" class="sub-nav-link" data-target="4">Legal and Compliance</a></li>
                             </ul>
                         </nav>
+
                     </section>
-
-
-
             </div>
 
 
@@ -228,9 +232,23 @@
         </body>
 
         <footer>
-            <picture class="footer-hbg-logo"><img src="assets/img/logo/HBG-logo-white.png"></picture>
-            <p>© HAMILTON BENEFITS GROUP 2016</p>
-            <p>Site Design by <a href="http://www.vandanapai.com">VP</a></p>
+
+            <div class="footer-container">
+            
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/hbg.benefits" target="_blank"><img src="assets/icons/fb.png"></a></li>
+                        <li><a href="https://www.linkedin.com/company/hbg-benefits" target="_blank"><img src="assets/icons/lin.png"></a></li>
+                        <li><a href="https://twitter.com/HbgBenefits" target="_blank"><img src="assets/icons/twitter.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright">
+                    <span>© Hamilton Benefits Group 2016</span><span>License #0K61610</span><span>Site Design by <a href="http://www.vandanapai.com">VP</a></span>
+                </div>
+
+
+            </div>
         </footer>
 
     </div>

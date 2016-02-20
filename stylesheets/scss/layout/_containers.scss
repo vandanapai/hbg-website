@@ -18,7 +18,7 @@
 
 }
 
-.grid-container, .content-container, .sub-container, article, aside, .table-half, .sub-link-dropdown-container {
+.grid-container, .content-container, .sub-container, article, aside, .table-half {
 
 	&.dark-blue {
 		background-color: $darkest-blue-container;
@@ -89,21 +89,40 @@
 
 	@include media($small) {
 		@include span-columns(4);
+
+		margin-right: 0;
 	}
 
 	&.right {
 		text-align: right;
 	}
+
+	p {
+		&.right {
+			float: right;
+		}
+	}
+
+	a {
+		&.right {
+			float: right;
+		}
+	}
 }
 
 .sub-container-img {
 	@include span-columns(3);
+	text-align: center;
 
 	@include media($small) {
 		@include span-columns(4);
 
+		width: 100%;
+
 		img {
 			width: 50%;
+			text-align: center;
+			margin: 0 auto;
 		}
 	}
 }
@@ -146,8 +165,10 @@
   width: 50%;
   height: 500px;
 
-  img {
-  	margin: 40px;
+  .philosophy-icon {
+  	img {
+  		margin: 40px;
+  	}
   }
 
   &.left {
@@ -160,6 +181,19 @@
   	@include media($medium) {
   		width: 100%;
   	}
+  }
+
+  &.responsive-resize {
+
+  	@include media($large) {
+  	  	height: 60px;
+  	  	width: 100%;
+
+  	  	&.show {
+  	  		height: 200px;
+  	  	}
+  	}
+
   }
 
   &.two-third {
@@ -184,6 +218,28 @@
 
 .table-left-text-wrap {
 	max-width: 400px;
+}
+
+.sub-link-container {
+
+	&.active {
+		display: none;
+	}
+
+	ul {
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+}
+
+.responsive-hide {
+	@include media($large) {
+		display: none;
+	}
+
+	&.show {
+		display: block;
+	}
 }
 
 .col-12 {

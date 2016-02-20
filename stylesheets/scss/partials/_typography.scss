@@ -120,6 +120,29 @@ p {
 	text-align: center;
 }
 
+.responsive-show {
+	@include media($desktop) {
+		display: none;
+	}
+	cursor: pointer;
+}
+
+.dropdown-menu-header {
+	h4, img {
+		display: inline-block;
+		margin: 0;
+	}
+
+	img {
+		padding-left: 3px;
+	}
+
+	&.show {
+		h4 {
+			margin-bottom: 10px;
+		}
+	}
+}
 
 /* Footer */
 

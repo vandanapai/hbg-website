@@ -41,6 +41,18 @@ $(document).ready(function () {
       $('.overlay-nav').fadeOut(300);
     });
 
+    $('#sub-link-dropdown-button').on('click', function () {
+      $('#sub-link-nav-table').toggleClass('show');
+      $('#sub-link-nav-list').toggleClass('show');
+      $('.dropdown-menu-header').toggleClass('show');
+ 
+       var _this = $('#arrowRotate');
+       var current = _this.attr("src");
+       var swap = _this.attr("data-swap");     
+     _this.attr('src', swap).attr("data-swap",current);   
+          
+    });
+
     wow = new WOW(
                       {
                       boxClass:     'wow',      // default
