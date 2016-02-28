@@ -611,6 +611,9 @@ h3 {
   color: #D3A031; }
   h3.light {
     color: #FFFFFF; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.5em; } }
 
 p {
   font: 100% "Din", sans-serif;
@@ -950,8 +953,7 @@ input[type=submit] {
 
 .hero-container {
   height: 100vh;
-  width: 100vw;
-  padding: 0 10%;
+  width: 100%;
   background-size: cover;
   left: 0;
   position: relative;

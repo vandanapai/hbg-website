@@ -79,6 +79,10 @@ h3 {
 	&.light {
 		color: $heading-font-color-light;
 	}
+
+	@include media($medium) {
+		font-size: 1.5em;
+	}
 }
 
 h5 {
