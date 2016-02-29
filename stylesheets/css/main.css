@@ -909,6 +909,11 @@ input[type=submit] {
     background-image: -webkit-linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%);
     background-image: linear-gradient(rgba(15, 19, 25, 0.8) 0, rgba(15, 19, 25, 0.8) 100%, transparent 90%); }
 
+.quote-pic {
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%; }
+
 .contact-form-container {
   max-width: 600px;
   margin: 0 auto;
@@ -1041,6 +1046,9 @@ input[type=submit] {
   @media screen and (max-width: 480px) {
     .sub-container {
       padding: 20px; } }
+  @media screen and (max-width: 768px) {
+    .sub-container {
+      padding: 40px; } }
 
 .sub-container-content {
   float: left;
@@ -1049,6 +1057,15 @@ input[type=submit] {
   width: 74.13793%; }
   .sub-container-content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .sub-container-content {
+      float: left;
+      display: block;
+      margin-right: 5.26316%;
+      width: 100%;
+      text-align: center; }
+      .sub-container-content:last-child {
+        margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .sub-container-content {
       float: left;
@@ -1060,10 +1077,19 @@ input[type=submit] {
         margin-right: 0; } }
   .sub-container-content.right {
     text-align: right; }
+    @media screen and (max-width: 768px) {
+      .sub-container-content.right {
+        text-align: center; } }
   .sub-container-content p.right {
     float: right; }
+    @media screen and (max-width: 768px) {
+      .sub-container-content p.right {
+        float: none; } }
   .sub-container-content a.right {
     float: right; }
+    @media screen and (max-width: 768px) {
+      .sub-container-content a.right {
+        float: none; } }
 
 .sub-container-img {
   float: left;
@@ -1071,21 +1097,18 @@ input[type=submit] {
   margin-right: 3.44828%;
   width: 22.41379%;
   text-align: center; }
+  .sub-container-img.right {
+    float: right; }
   .sub-container-img:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .sub-container-img {
-      float: left;
-      display: block;
-      margin-right: 11.11111%;
-      width: 100%;
       width: 100%; }
-      .sub-container-img:last-child {
-        margin-right: 0; }
       .sub-container-img img {
         width: 50%;
         text-align: center;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        padding: 10px; } }
 
 .bg-img-container {
   position: relative; }
