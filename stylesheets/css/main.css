@@ -717,7 +717,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 1em; }
+  font-size: 1em;
+  outline: none; }
 
 .main-nav-links-container a {
   color: #3D5568;

@@ -12,7 +12,7 @@ $(document).ready(function () {
 	});
 
 	$(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 100;
+	   var navHeight = $( window ).height() - 80;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.main-nav-container').addClass('fixed');
 			 }
