@@ -37,10 +37,10 @@ footer {
 			}
 
 			img {
-				max-height: 15px;
+	
 
 				@include media($large) {
-					max-height: 30px;
+					
 				}
 			}
 		}

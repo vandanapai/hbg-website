@@ -43,6 +43,11 @@
 	&.light-grey {
 		background-color: $light-grey-container;
 	}
+
+	&.dotted {
+		background-image: url('../../assets/icons/dot-bg.png');
+		background-repeat: repeat;
+	}
 }
 
 
