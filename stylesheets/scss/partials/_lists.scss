@@ -8,4 +8,15 @@ ul {
 		}
 	}
 
+	&.terms {
+		color: $body-font-color-dark;
+
+		li {
+			&:before {
+				content: "▪ ";
+				color: $body-font-color-dark;
+			}
+		}
+	}
+
 }

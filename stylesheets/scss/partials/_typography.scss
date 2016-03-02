@@ -85,8 +85,6 @@ h3 {
 	}
 }
 
-h5 {
-}
 
 p {
 	font: 100% $sans-font-stack;
@@ -167,4 +165,17 @@ footer {
 ::selection {
        background-color: $pure-white;
        color: $gold;
+}
+
+/* Privacy Policy and Terms */
+
+.terms-content, .privacy-content {
+	p {
+		color: $body-font-color-dark;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		color: $heading-font-color-blue;
+	}
 }
