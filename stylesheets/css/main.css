@@ -251,6 +251,30 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -378,6 +402,51 @@ Copyright (c) 2014 Daniel Eden
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  height: 100%;
+  background: #1C2634;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  transition: all 2s ease-out; }
+
+#loader {
+  z-index: 1001;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.loaded #loader-wrapper .loader-section {
+  opacity: 0; }
+
+.loaded #loader {
+  opacity: 0; }
+
+.loaded #loader-wrapper {
+  visibility: hidden; }
+
+.no-js #loader-wrapper {
+  display: none; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -419,6 +488,30 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -546,6 +639,51 @@ Copyright (c) 2014 Daniel Eden
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  height: 100%;
+  background: #1C2634;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  transition: all 2s ease-out; }
+
+#loader {
+  z-index: 1001;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.loaded #loader-wrapper .loader-section {
+  opacity: 0; }
+
+.loaded #loader {
+  opacity: 0; }
+
+.loaded #loader-wrapper {
+  visibility: hidden; }
+
+.no-js #loader-wrapper {
+  display: none; }
 
 p, h1, h2, h3, ul, ol, button, input[type=submit], figure {
   margin-bottom: 24px;
@@ -854,6 +992,11 @@ input[type=submit] {
 
 .hero-tree {
   background: url("../../assets/img/hero-tree.jpg") 50% 0 repeat fixed;
+  max-width: 1920px;
+  position: relative; }
+
+.hero-man-mtn {
+  background: url("../../assets/img/hero-man-mtn.jpg") 50% 0 repeat fixed;
   max-width: 1920px;
   position: relative; }
 
@@ -1241,7 +1384,7 @@ input[type=submit] {
 .main-nav-container {
   position: absolute;
   width: 100%;
-  z-index: 5000;
+  z-index: 1000;
   height: 80px;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;

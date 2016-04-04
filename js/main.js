@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+  $('body').imagesLoaded( function() {
+  setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+  });
+
+
+
 
   $('.hidden').hide();
 	$('.sub-nav-link').on('click', function () {

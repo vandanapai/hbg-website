@@ -1,7 +1,7 @@
 .main-nav-container {
 	position: absolute;
 	width: 100%;
-	z-index: 5000;
+	z-index: 1000;
 	height: 80px;
 
 	@include transition(all 0.1s);
