@@ -448,6 +448,25 @@ Copyright (c) 2014 Daniel Eden
 .no-js #loader-wrapper {
   display: none; }
 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #005079;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -685,6 +704,25 @@ Copyright (c) 2014 Daniel Eden
 .no-js #loader-wrapper {
   display: none; }
 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #005079;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
 p, h1, h2, h3, ul, ol, button, input[type=submit], figure {
   margin-bottom: 24px;
   line-height: 24px;
@@ -816,6 +854,11 @@ footer p {
 .terms-content h2, .privacy-content h2 {
   text-transform: uppercase;
   color: #3D5568; }
+
+.error-content {
+  text-align: center; }
+  .error-content p {
+    color: #0B0C0A; }
 
 a {
   font: 100% "Din", sans-serif;

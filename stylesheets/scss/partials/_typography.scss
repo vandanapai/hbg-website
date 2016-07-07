@@ -179,3 +179,10 @@ footer {
 		color: $heading-font-color-blue;
 	}
 }
+
+.error-content {
+	p {
+		color: $body-font-color-dark;
+	}
+	text-align: center;
+}

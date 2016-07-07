@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
-  $('body').imagesLoaded( function() {
+  $('body').imagesLoaded({ background: '.bg-load' }, function() {
+  
   setTimeout(function(){
+        console.log('all .item background images loaded');
         $('body').addClass('loaded');
     }, 3000);
   });
@@ -29,6 +31,9 @@ $(document).ready(function () {
 			 }
 	});
 
+  
+
+  if ($(window).width() > 800){
     $('div[data-type="background"]').each(function(){
         var $bgobj = $(this);
     
@@ -39,7 +44,8 @@ $(document).ready(function () {
 
             $bgobj.css({ backgroundPosition: coords });
         }); 
-    });  
+      }); 
+    }; 
 
     $('.mobile-menu-btn').on('click', function () {
       $('.overlay-nav').fadeIn(300);
@@ -61,16 +67,30 @@ $(document).ready(function () {
           
     });
 
-    wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       true,       // default
-                      live:         true        // default
-                    }
-                    )
-    wow.init();  
+    // wow = new WOW(
+    //                   {
+    //                   boxClass:     'wow',      // default
+    //                   animateClass: 'animated', // default
+    //                   offset:       0,          // default
+    //                   mobile:       false,       // default
+    //                   live:         true        // default
+    //                 }
+    //                 )
+    // wow.init();  
+
+    var wow = new WOW(
+  {
+    boxClass:     'wow',      
+    animateClass: 'animated', 
+    offset:       0,    
+    mobile:       false,      
+    live:         true,  
+    callback:     function(box) {
+    },
+    scrollContainer: null 
+  }
+);
+wow.init();
 
 	
 });
